@@ -1,3 +1,4 @@
+console.log('\n', "Here's the list of students that took the offered courses:")
 let students = [
     {id: 1, name: 'Obasi Ikeckukwu', grades: [78, 86, 91, 93]},
     {id: 2, name: 'Thompson Ikeckukwu', grades: [92, 71, 98, 67]},
@@ -5,8 +6,10 @@ let students = [
     {id: 4, name: 'Samson Udoh', grades: [72, 69, 83, 71]},
     {id: 5, name: 'Ikechukwu Thompson', grades: [75, 81, 95, 85]},
 ]
-console.log(students)
+console.log(students, '\n')
 
+
+console.log("The List of students updated by their average grades:")
 const calculateAverageGrades = (arr) => {
     return arr.map(arrItem => {
         //Extracting how ever number of courses a student takes
@@ -25,7 +28,7 @@ const calculateAverageGrades = (arr) => {
         return updatedGrade;
     })
 }
-console.log(calculateAverageGrades(students))
+console.log(calculateAverageGrades(students), '\n')
 
 
 const findTopStudent = (students) => {
@@ -36,8 +39,11 @@ const findTopStudent = (students) => {
         return (topStudent.averageGrade > aStudent.averageGrade) ? topStudent : aStudent
     }, averageGrade = 0)
 }
-console.log(findTopStudent(students))
+console.log("The Overall best student by grade is: ", '\n', findTopStudent(students), '\n')
+/* console.log() */
 
+
+console.log("Here's the final rank of students that took the offered courses by grade:")
 const sortStudentsByGrade = (students) => {
     let studentAverageList = calculateAverageGrades(students);
     //Returning a copy of the studentAverageList array and sorting it in descending order

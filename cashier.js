@@ -1,4 +1,4 @@
-console.log('\n', "Here's the list of students that took the offered courses:")
+console.log('\n', "Here's the list of students that took the offered courses and their grades:")
 let students = [
     {id: 1, name: 'Obasi Ikeckukwu', grades: [78, 86, 91, 93]},
     {id: 2, name: 'Thompson Ikeckukwu', grades: [92, 71, 98, 67]},
